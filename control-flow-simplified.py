@@ -25,7 +25,7 @@ class Anaysis_Block(plugin_t):
             stack.append(block)
         for block in stack[::-1]:
             if block.start_ea==target:
-                addr = block.preds()  #包含后续地址的生成器
+                addr = block.preds()
                 for i in addr:
                     target=i.start_ea
                 trace.append(block)
