@@ -2,7 +2,7 @@
 学习idapython的同时，写下了这个插件，本意的主要的功能是静态对程序控制流的简化，找到目标block的调用关系，暂时只是实现了反向单链控制关系，会在后面继续加入多条控制流的关系。下面是效果
 
 Before
-```c++
+```
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
   char v4; // [rsp+0h] [rbp-14A0h] BYREF
@@ -7424,7 +7424,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
 
 
 After
-```c++
+```
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
   int result; // eax
