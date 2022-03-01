@@ -1,4 +1,6 @@
 # control-flow-simplified
+学习idapython的同时，写下了这个插件，本意的主要的功能是静态对程序控制流的简化，找到目标block的调用关系，暂时只是实现了反向单链控制关系，会在后面继续加入多条控制流的关系。下面是效果
+
 Before
 ```c++
 int __cdecl main(int argc, const char **argv, const char **envp)
@@ -7637,7 +7639,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
   v5[2] ^= 0xFDu;
   v5[38] ^= 0x4Eu;
   v5[21] ^= 0x65u;
-  v5[16] ^= 0xD0u;
+  v5[16] ^= 0xD0u;Cancel changes
   v5[15] ^= 0xEDu;
   v5[37] ^= 0x9Bu;
   v5[22] ^= 0xA5u;
@@ -7754,4 +7756,4 @@ int __cdecl main(int argc, const char **argv, const char **envp)
     }
   }
   return result;
-}
+}```
